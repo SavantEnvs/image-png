@@ -1,0 +1,5 @@
+project: savantenvs/image-png
+target: decode
+cmds:
+  - cmd: /mayhem/decode
+    libfuzzer: true
