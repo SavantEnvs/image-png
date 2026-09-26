@@ -1,0 +1,6 @@
+project: savantenvs/image-png
+target: buf-independent-buggy-mhh-run-34
+# origin: https://app.mayhem.security/mayhemheroes/image-png/buf-independent/34
+cmds:
+  - cmd: /mayhem/buf_independent
+    libfuzzer: true
