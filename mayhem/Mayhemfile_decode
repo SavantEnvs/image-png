@@ -1,0 +1,11 @@
+project: savantenvs/image-png
+target: decode-mined-a5faaf2
+# seed-from: https://app.mayhem.security/savantenvs/image-png/decode
+
+cmds:
+  - cmd: /mayhem/decode
+    libfuzzer: true
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/decode-mined-a5faaf2/testsuite
