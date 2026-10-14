@@ -1,0 +1,11 @@
+project: savantenvs/image-png
+target: next_frame-mined-2eb9463
+# seed-from: https://app.mayhem.security/savantenvs/image-png/buf-independent
+
+cmds:
+  - cmd: /mayhem/next_frame
+    libfuzzer: true
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/next_frame-mined-2eb9463/testsuite
